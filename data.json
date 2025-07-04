@@ -1,0 +1,201 @@
+[
+  {
+    "id": "bymarka_gronlia_hike",
+    "nome_it": "Escursione a Grønlia (Bymarka)",
+    "nome_en": "Grønlia Hike (Bymarka)",
+    "descrizione_it": "Passeggiata panoramica nel bosco di Bymarka fino al rifugio Grønlia con vista sul lago Skjellbreia.",
+    "descrizione_en": "Forest walk in Bymarka to Grønlia cabin, overlooking Lake Skjellbreia.",
+    "categorie": [
+      "Escursioni & passeggiate",
+      "Natura"
+    ],
+    "prezzo_eur": 0,
+    "prezzo_nok": 0,
+    "fascia_prezzo": "Gratis",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-10",
+    "nota_orari": "Caffetteria aperta 10‑16, chiusa lunedì",
+    "lat": 63.398,
+    "lng": 10.281,
+    "url": "https://www.visitnorway.com/listings/gr%C3%B8nlia/268686/"
+  },
+  {
+    "id": "nidaros_cathedral_tour",
+    "nome_it": "Visita guidata alla Cattedrale di Nidaros",
+    "nome_en": "Guided tour of Nidaros Cathedral",
+    "descrizione_it": "Il più importante santuario medioevale della Norvegia, con cripta e museo dei gioielli della Corona.",
+    "descrizione_en": "Norway’s most important medieval sanctuary, including crypt and crown jewels museum.",
+    "categorie": [
+      "Attività cittadine",
+      "Cultura & folklore"
+    ],
+    "prezzo_eur": 15,
+    "prezzo_nok": 177,
+    "fascia_prezzo": "10-20 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "Aperta tutti i giorni 09‑18; messe domenicali 11‑13",
+    "lat": 63.427,
+    "lng": 10.396,
+    "url": "https://www.nidarosdomen.no/en"
+  },
+  {
+    "id": "munkholmen_ferry_trip",
+    "nome_it": "Traghetto per l'isola di Munkholmen",
+    "nome_en": "Ferry trip to Munkholmen island",
+    "descrizione_it": "Isolotto storico nella baia di Trondheim: ex monastero, fortezza e prigione; ottimo punto panoramico.",
+    "descrizione_en": "Historic islet in Trondheim bay: former monastery, fortress and prison, great viewpoint.",
+    "categorie": [
+      "Escursioni & passeggiate",
+      "Cultura & folklore"
+    ],
+    "prezzo_eur": 20,
+    "prezzo_nok": 236,
+    "fascia_prezzo": "20-30 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-09",
+    "nota_orari": "Battelli ogni ora 10‑17; servizio sospeso da ottobre",
+    "lat": 63.456,
+    "lng": 10.352,
+    "url": "https://munkholmen.no/en/"
+  },
+  {
+    "id": "ringve_music_museum",
+    "nome_it": "Ringve Museum – Museo della Musica",
+    "nome_en": "Ringve Music Museum",
+    "descrizione_it": "Collezione di strumenti da tutto il mondo in una villa del XVIII secolo, con demo musicali dal vivo.",
+    "descrizione_en": "Collection of instruments from around the world in an 18th‑century manor, with live demos.",
+    "categorie": [
+      "Cultura & folklore",
+      "Attività cittadine"
+    ],
+    "prezzo_eur": 12,
+    "prezzo_nok": 142,
+    "fascia_prezzo": "10-20 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "Mar‑dom 11‑16, chiuso lunedì",
+    "lat": 63.446,
+    "lng": 10.424,
+    "url": "https://ringve.no/en/"
+  },
+  {
+    "id": "vassfjellet_ski_day",
+    "nome_it": "Sci a Vassfjellet Winter Park",
+    "nome_en": "Skiing at Vassfjellet Winter Park",
+    "descrizione_it": "12 piste e 7 impianti a 30 min da Trondheim; noleggio e scuola sci.",
+    "descrizione_en": "12 runs and 7 lifts just 30 min from Trondheim; rental and ski school.",
+    "categorie": [
+      "Sci & sport invernali"
+    ],
+    "prezzo_eur": 42,
+    "prezzo_nok": 496,
+    "fascia_prezzo": "30-50 €",
+    "periodo_da": "2025-11",
+    "periodo_a": "2026-04",
+    "nota_orari": "Impianti 09‑16; night‑ski ven‑sab",
+    "lat": 63.245,
+    "lng": 10.467,
+    "url": "https://www.skiresort.info/ski-resort/vassfjellet-klaebutrondheim/"
+  },
+  {
+    "id": "roros_unesco_daytrip",
+    "nome_it": "Gita a Røros – città UNESCO",
+    "nome_en": "Day‑trip to Røros (UNESCO)",
+    "descrizione_it": "Villaggio minerario in legno del XVII secolo, artigianato e mercatini di Natale.",
+    "descrizione_en": "17th‑century wooden mining town, crafts and Christmas market.",
+    "categorie": [
+      "Cultura & folklore",
+      "Touring / road trip"
+    ],
+    "prezzo_eur": 35,
+    "prezzo_nok": 413,
+    "fascia_prezzo": "30-50 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "Museo minerario chiuso lunedì",
+    "lat": 62.574,
+    "lng": 11.386,
+    "url": "https://www.visitnorway.com/listings/r%C3%B8ros-mining-town/8617/"
+  },
+  {
+    "id": "fjord_northern_lights_cruise",
+    "nome_it": "Mini‑crociera Aurora sul fiordo di Trondheim",
+    "nome_en": "Northern Lights mini‑cruise on Trondheim Fjord",
+    "descrizione_it": "3 ore in barca serale con guida. Tuta termica inclusa. Avvistamento aurora nelle notti limpide.",
+    "descrizione_en": "3‑hour evening boat trip with guide. Thermal suit included. Aurora spotting on clear nights.",
+    "categorie": [
+      "Aurora boreale",
+      "Fauna & natura"
+    ],
+    "prezzo_eur": 95,
+    "prezzo_nok": 1121,
+    "fascia_prezzo": "70-100 €",
+    "periodo_da": "2025-10",
+    "periodo_a": "2026-03",
+    "nota_orari": "Partenza 20:00 dal molo Ravnkloa",
+    "lat": 63.435,
+    "lng": 10.395,
+    "url": "https://www.fjordcruise.no/"
+  },
+  {
+    "id": "steen_sakke_puffin_safari",
+    "nome_it": "Safari pulcinelle di mare a Sula",
+    "nome_en": "Puffin safari at Sula island",
+    "descrizione_it": "Gita in bus + barca fino all’isola di Sula per osservare colonie di pulcinelle di mare.",
+    "descrizione_en": "Bus + boat trip to Sula island to watch puffin colonies.",
+    "categorie": [
+      "Fauna & natura",
+      "Touring / road trip"
+    ],
+    "prezzo_eur": 70,
+    "prezzo_nok": 826,
+    "fascia_prezzo": "70-100 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-09",
+    "nota_orari": "Solo sab‑dom; partenza 07:30, rientro 19:00",
+    "lat": 64.102,
+    "lng": 10.914,
+    "url": "https://www.fosentravel.no/puffin-safari"
+  },
+  {
+    "id": "mikrobryggeriet_beer_tour",
+    "nome_it": "Tour e degustazione Mikrobryggeriet",
+    "nome_en": "Mikrobryggeriet brewery tour & tasting",
+    "descrizione_it": "Il più antico microbirrificio di Trondheim: visita impianti e assaggi di 4 birre artigianali.",
+    "descrizione_en": "Trondheim’s oldest microbrewery: facility tour and tasting of 4 craft beers.",
+    "categorie": [
+      "Food & drink",
+      "Attività cittadine"
+    ],
+    "prezzo_eur": 28,
+    "prezzo_nok": 330,
+    "fascia_prezzo": "20-30 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "Ven‑sab 17:00; prenotazione obbligatoria",
+    "lat": 63.43,
+    "lng": 10.394,
+    "url": "https://mikrobryggeriet.no/"
+  },
+  {
+    "id": "stavne_swing_bridge_walk",
+    "nome_it": "Passeggiata al ponte sospeso Stavne",
+    "nome_en": "Walk to Stavne suspension bridge",
+    "descrizione_it": "Breve trekking urbano lungo il fiume Nidelva fino al ponte oscillante di Stavne.",
+    "descrizione_en": "Short urban hike along the Nidelva river to the swinging Stavne bridge.",
+    "categorie": [
+      "Escursioni & passeggiate",
+      "Natura"
+    ],
+    "prezzo_eur": 0,
+    "prezzo_nok": 0,
+    "fascia_prezzo": "Gratis",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "",
+    "lat": 63.417,
+    "lng": 10.364,
+    "url": "https://trondheim.com/en/stavnebroa"
+  }
+]
