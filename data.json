@@ -51,7 +51,7 @@
     ],
     "prezzo_eur": 20,
     "prezzo_nok": 236,
-    "fascia_prezzo": "20-30 €",
+    "fascia_prezzo": "10-20 €",
     "periodo_da": "2025-08",
     "periodo_a": "2025-09",
     "nota_orari": "Battelli ogni ora 10‑17; servizio sospeso da ottobre",
@@ -150,7 +150,7 @@
     ],
     "prezzo_eur": 70,
     "prezzo_nok": 826,
-    "fascia_prezzo": "70-100 €",
+    "fascia_prezzo": "50-70 €",
     "periodo_da": "2025-08",
     "periodo_a": "2025-09",
     "nota_orari": "Solo sab‑dom; partenza 07:30, rientro 19:00",
@@ -197,5 +197,880 @@
     "lat": 63.417,
     "lng": 10.364,
     "url": "https://trondheim.com/en/stavnebroa"
+  },
+  {
+    "id": "tyholttarnet_view",
+    "nome_it": "Salita alla Tyholttårnet",
+    "nome_en": "Tyholt Tower city view",
+    "descrizione_it": "Elevatore panoramico fino al ristorante girevole con vista a 360° su Trondheim.",
+    "descrizione_en": "Panoramic elevator to the revolving restaurant with 360° view over Trondheim.",
+    "categorie": [
+      "Attività cittadine"
+    ],
+    "prezzo_eur": 10,
+    "prezzo_nok": 118,
+    "fascia_prezzo": "5-10 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "Aperto tutti i giorni 10‑23",
+    "lat": 63.433,
+    "lng": 10.433,
+    "url": "https://www.tyholttarnet.no/"
+  },
+  {
+    "id": "pirbadet_pool",
+    "nome_it": "Pomeriggio alle piscine Pirbadet",
+    "nome_en": "Pirbadet indoor waterpark",
+    "descrizione_it": "Complesso termale e acquatico coperto sul fiordo; vasca onde e saune con vista mare.",
+    "descrizione_en": "Indoor waterpark on the fjord; wave pool and sea-view saunas.",
+    "categorie": [
+      "Benessere & relax",
+      "Attività cittadine"
+    ],
+    "prezzo_eur": 20,
+    "prezzo_nok": 236,
+    "fascia_prezzo": "10-20 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "Lun‑ven 06‑22, sab‑dom 09‑20",
+    "lat": 63.445,
+    "lng": 10.409,
+    "url": "https://pirbadet.no/"
+  },
+  {
+    "id": "oppdal_wolves_park",
+    "nome_it": "Incontro con i lupi a Oppdal",
+    "nome_en": "Wolf encounter at Oppdal Wildlife Park",
+    "descrizione_it": "Tour guidato nel recinto dei lupi con biologo; 2 h. Include treno diretto da Trondheim.",
+    "descrizione_en": "Guided entry into the wolf enclosure with biologist; 2 h. Direct train from Trondheim included.",
+    "categorie": [
+      "Fauna & natura"
+    ],
+    "prezzo_eur": 85,
+    "prezzo_nok": 1003,
+    "fascia_prezzo": "70-100 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-10",
+    "nota_orari": "Partenza treno 08:18, rientro 18:00",
+    "lat": 62.594,
+    "lng": 9.691,
+    "url": "https://www.wildlifepark.no/"
+  },
+  {
+    "id": "dovrefjell_muskox_safari",
+    "nome_it": "Safari bue muschiato Dovrefjell",
+    "nome_en": "Musk ox safari Dovrefjell",
+    "descrizione_it": "Escursione di un giorno con ranger per avvistare i buoi muschiati nel parco nazionale.",
+    "descrizione_en": "Full‑day hike with ranger to spot musk oxen in the national park.",
+    "categorie": [
+      "Fauna & natura",
+      "Escursioni & passeggiate"
+    ],
+    "prezzo_eur": 90,
+    "prezzo_nok": 1062,
+    "fascia_prezzo": "70-100 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-09",
+    "nota_orari": "Prenotazione obbligatoria; 14 km di cammino",
+    "lat": 62.304,
+    "lng": 9.487,
+    "url": "https://muskox.no/"
+  },
+  {
+    "id": "bybro_oldsbrua_photo",
+    "nome_it": "Foto al ponte Bybrua e case colorate",
+    "nome_en": "Photo walk Old Town Bridge",
+    "descrizione_it": "Passeggiata serale per scattare foto alle case su pali del quartiere Bakklandet.",
+    "descrizione_en": "Evening walk to shoot the colorful stilt houses in Bakklandet quarter.",
+    "categorie": [
+      "Escursioni & passeggiate",
+      "Attività cittadine"
+    ],
+    "prezzo_eur": 0,
+    "prezzo_nok": 0,
+    "fascia_prezzo": "Gratis",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "",
+    "lat": 63.43,
+    "lng": 10.403,
+    "url": "https://www.visittrondheim.no/"
+  },
+  {
+    "id": "trondheim_art_museum",
+    "nome_it": "Trondheim Kunstmuseum",
+    "nome_en": "Trondheim Art Museum visit",
+    "descrizione_it": "Collezione di arte norvegese moderna; mostre temporanee di artisti scandinavi.",
+    "descrizione_en": "Collection of modern Norwegian art; rotating Scandinavian exhibitions.",
+    "categorie": [
+      "Cultura & folklore",
+      "Attività cittadine"
+    ],
+    "prezzo_eur": 12,
+    "prezzo_nok": 142,
+    "fascia_prezzo": "10-20 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "Mar‑dom 10‑16, giovedì fino 19",
+    "lat": 63.43,
+    "lng": 10.395,
+    "url": "https://www.trondheimkunstmuseum.no/"
+  },
+  {
+    "id": "fjellheisen_tromso",
+    "nome_it": "Fjellheisen + aurora a Tromsø (low‑cost)",
+    "nome_en": "Fjellheisen cable car & aurora Tromsø",
+    "descrizione_it": "Volo low‑cost + bus espresso: salita in funivia e serata a caccia di aurora sopra Tromsø.",
+    "descrizione_en": "Low‑cost flight + airport bus: cable car ride and evening aurora hunt over Tromsø.",
+    "categorie": [
+      "Aurora boreale",
+      "Touring / road trip"
+    ],
+    "prezzo_eur": 120,
+    "prezzo_nok": 1416,
+    "fascia_prezzo": "100-150 €",
+    "periodo_da": "2025-10",
+    "periodo_a": "2026-02",
+    "nota_orari": "Biglietto aereo escluso bagaglio",
+    "lat": 69.649,
+    "lng": 18.959,
+    "url": "https://fjellheisen.no/"
+  },
+  {
+    "id": "selbusjoen_kayak",
+    "nome_it": "Kayak sul lago Selbusjøen",
+    "nome_en": "Kayaking on Lake Selbusjøen",
+    "descrizione_it": "Noleggio kayak per mezza giornata con giubbotti e mappa delle baie tranquille.",
+    "descrizione_en": "Half‑day kayak rental with lifejackets and map of calm bays.",
+    "categorie": [
+      "Escursioni & passeggiate",
+      "Natura"
+    ],
+    "prezzo_eur": 40,
+    "prezzo_nok": 472,
+    "fascia_prezzo": "30-50 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-09",
+    "nota_orari": "Ritiro equipaggiamento entro le 10:00",
+    "lat": 63.226,
+    "lng": 11.037,
+    "url": "https://selbusjokajakk.no/"
+  },
+  {
+    "id": "hell_station_photo",
+    "nome_it": "Foto alla stazione di Hell",
+    "nome_en": "Photo stop at Hell station",
+    "descrizione_it": "Curiosa fermata ferroviaria con insegna “Hell – Gods‑expedition”; 35 min di treno da Trondheim.",
+    "descrizione_en": "Quirky train stop with sign “Hell – Gods expedition”; 35 min train from Trondheim.",
+    "categorie": [
+      "Cultura & folklore",
+      "Touring / road trip"
+    ],
+    "prezzo_eur": 7,
+    "prezzo_nok": 83,
+    "fascia_prezzo": "5-10 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "Solo costo biglietto treno",
+    "lat": 63.445,
+    "lng": 10.906,
+    "url": "https://www.vy.no/"
+  },
+  {
+    "id": "svartlamon_street_art",
+    "nome_it": "Tour street‑art a Svartlamon",
+    "nome_en": "Svartlamon street‑art tour",
+    "descrizione_it": "Passeggiata guidata nel quartiere autogestito di Svartlamon tra murales e case di legno.",
+    "descrizione_en": "Guided walk in the self‑managed Svartlamon district among murals and wooden houses.",
+    "categorie": [
+      "Cultura & folklore",
+      "Attività cittadine"
+    ],
+    "prezzo_eur": 18,
+    "prezzo_nok": 212,
+    "fascia_prezzo": "10-20 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "Sabato 14:00, durata 2h",
+    "lat": 63.442,
+    "lng": 10.423,
+    "url": "https://trondheimtours.no/"
+  },
+  {
+    "id": "granåsen_biathlon",
+    "nome_it": "Prova il biathlon a Granåsen",
+    "nome_en": "Try biathlon at Granåsen arena",
+    "descrizione_it": "Sessione introduttiva con sci a rotelle e tiro a 10 km dal centro.",
+    "descrizione_en": "Intro session with roller skis and shooting 10 km from city centre.",
+    "categorie": [
+      "Sci & sport invernali"
+    ],
+    "prezzo_eur": 55,
+    "prezzo_nok": 649,
+    "fascia_prezzo": "50-70 €",
+    "periodo_da": "2025-09",
+    "periodo_a": "2025-10",
+    "nota_orari": "Attrezzatura inclusa",
+    "lat": 63.392,
+    "lng": 10.305,
+    "url": "https://granasen.no/"
+  },
+  {
+    "id": "festningen_concert",
+    "nome_it": "Concerto open‑air a Kristiansten Festning",
+    "nome_en": "Open‑air concert Kristiansten Fortress",
+    "descrizione_it": "Rassegna estiva di musica pop/rock nella fortezza panoramica del XVII secolo.",
+    "descrizione_en": "Summer pop/rock series at the panoramic 17th‑century fortress.",
+    "categorie": [
+      "Cultura & folklore",
+      "Attività cittadine"
+    ],
+    "prezzo_eur": 35,
+    "prezzo_nok": 413,
+    "fascia_prezzo": "30-50 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-09",
+    "nota_orari": "Gio‑sab 19:30",
+    "lat": 63.429,
+    "lng": 10.417,
+    "url": "https://festningen.no/"
+  },
+  {
+    "id": "sverresborg_folk",
+    "nome_it": "Museo del folklore Sverresborg",
+    "nome_en": "Sverresborg Trøndelag Folk Museum",
+    "descrizione_it": "Villaggio all’aperto con case originali e botteghe del Trøndelag rurale.",
+    "descrizione_en": "Open‑air village with original buildings from rural Trøndelag.",
+    "categorie": [
+      "Cultura & folklore"
+    ],
+    "prezzo_eur": 16,
+    "prezzo_nok": 189,
+    "fascia_prezzo": "10-20 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "Ott‑apr chiuso lunedì",
+    "lat": 63.408,
+    "lng": 10.322,
+    "url": "https://sverresborg.no/"
+  },
+  {
+    "id": "bike_trampelevator",
+    "nome_it": "Salita in bicicletta con il Trampe",
+    "nome_en": "Bike lift Trampe experience",
+    "descrizione_it": "Prova la prima ciclovia ascensore al mondo in Bakklandet; noleggio bici incluso.",
+    "descrizione_en": "Try the world's first bike lift in Bakklandet; bike rental included.",
+    "categorie": [
+      "Attività cittadine",
+      "Escursioni & passeggiate"
+    ],
+    "prezzo_eur": 8,
+    "prezzo_nok": 94,
+    "fascia_prezzo": "5-10 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-10",
+    "nota_orari": "",
+    "lat": 63.43,
+    "lng": 10.407,
+    "url": "https://trampe.no/"
+  },
+  {
+    "id": "fjord_sauna",
+    "nome_it": "Sauna galleggiante sul fiordo",
+    "nome_en": "Floating fjord sauna session",
+    "descrizione_it": "90 minuti di sauna su piattaforma galleggiante con tuffo nel fiordo incluso.",
+    "descrizione_en": "90‑minute sauna on floating platform with fjord dip.",
+    "categorie": [
+      "Benessere & relax",
+      "Natura"
+    ],
+    "prezzo_eur": 25,
+    "prezzo_nok": 295,
+    "fascia_prezzo": "20-30 €",
+    "periodo_da": "2025-09",
+    "periodo_a": "2025-12",
+    "nota_orari": "Porta costume e asciugamano",
+    "lat": 63.437,
+    "lng": 10.396,
+    "url": "https://fjordsauna.no/"
+  },
+  {
+    "id": "cable_ferry_orkla",
+    "nome_it": "Traghetto a cavo sul fiume Orkla",
+    "nome_en": "Historic rope ferry Orkla river",
+    "descrizione_it": "Attraversamento manuale su chiatta storica; esperienza insolita a 1h di bus.",
+    "descrizione_en": "Hand‑pulled rope ferry crossing – quirky experience 1h by bus.",
+    "categorie": [
+      "Cultura & folklore",
+      "Escursioni & passeggiate"
+    ],
+    "prezzo_eur": 5,
+    "prezzo_nok": 59,
+    "fascia_prezzo": "5-10 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-09",
+    "nota_orari": "Funziona solo con livello acqua sufficiente",
+    "lat": 63.28,
+    "lng": 9.708,
+    "url": "https://orklaferge.no/"
+  },
+  {
+    "id": "oppdal_climbing_hall",
+    "nome_it": "Climbing Hall Oppdal",
+    "nome_en": "Oppdal indoor climbing hall",
+    "descrizione_it": "Pareti di arrampicata e boulder; ingresso + scarpe; treno diretto ogni ora.",
+    "descrizione_en": "Climbing & bouldering gym; entry + shoes; direct train hourly.",
+    "categorie": [
+      "Sci & sport invernali"
+    ],
+    "prezzo_eur": 22,
+    "prezzo_nok": 260,
+    "fascia_prezzo": "20-30 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "",
+    "lat": 62.593,
+    "lng": 9.706,
+    "url": "https://oppdalclimbing.no/"
+  },
+  {
+    "id": "skistua_cafe_bymarka",
+    "nome_it": "Waffle & caffè alla Skistua",
+    "nome_en": "Waffle break at Skistua cabin",
+    "descrizione_it": "Rifugio iconico di Bymarka: waffle caldi, cioccolata e vista sul lago.",
+    "descrizione_en": "Iconic Bymarka cabin: hot waffles, cocoa and lake view.",
+    "categorie": [
+      "Natura",
+      "Escursioni & passeggiate",
+      "Food & drink"
+    ],
+    "prezzo_eur": 6,
+    "prezzo_nok": 71,
+    "fascia_prezzo": "5-10 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "Ven‑dom 10‑17",
+    "lat": 63.399,
+    "lng": 10.255,
+    "url": "https://skistua.no/"
+  },
+  {
+    "id": "æra_festival",
+    "nome_it": "Æra festival birra artigianale",
+    "nome_en": "Æra craft beer festival",
+    "descrizione_it": "Evento annuale di microbirrifici norvegesi sotto tendone riscaldato.",
+    "descrizione_en": "Annual Norwegian microbrew fest under heated tent.",
+    "categorie": [
+      "Food & drink",
+      "Cultura & folklore"
+    ],
+    "prezzo_eur": 30,
+    "prezzo_nok": 354,
+    "fascia_prezzo": "20-30 €",
+    "periodo_da": "2025-09",
+    "periodo_a": "2025-09",
+    "nota_orari": "Weekend 12‑22",
+    "lat": 63.434,
+    "lng": 10.396,
+    "url": "https://erafestival.no/"
+  },
+  {
+    "id": "foosen_sunset",
+    "nome_it": "Tramonto al faro di Fosen",
+    "nome_en": "Sunset at Fosen lighthouse",
+    "descrizione_it": "Mini‑bus e passeggiata di 3 km per raggiungere il piccolo faro sulla penisola Fosen.",
+    "descrizione_en": "Minibus and 3 km walk to reach the tiny lighthouse on Fosen peninsula.",
+    "categorie": [
+      "Natura",
+      "Touring / road trip"
+    ],
+    "prezzo_eur": 18,
+    "prezzo_nok": 212,
+    "fascia_prezzo": "10-20 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-09",
+    "nota_orari": "Partenza 18:00, rientro 23:00",
+    "lat": 63.704,
+    "lng": 9.563,
+    "url": "https://fosenlighthouse.no/"
+  },
+  {
+    "id": "snowshoe_bymarka",
+    "nome_it": "Ciaspolata notturna a Bymarka",
+    "nome_en": "Night snowshoeing Bymarka",
+    "descrizione_it": "Guida, lampade frontali e cioccolata calda lungo il sentiero panoramico.",
+    "descrizione_en": "Guide, headlamps and hot chocolate on panoramic trail.",
+    "categorie": [
+      "Escursioni & passeggiate",
+      "Natura"
+    ],
+    "prezzo_eur": 38,
+    "prezzo_nok": 448,
+    "fascia_prezzo": "30-50 €",
+    "periodo_da": "2025-12",
+    "periodo_a": "2026-02",
+    "nota_orari": "Partenza 18:30 dalla fermata Lian",
+    "lat": 63.409,
+    "lng": 10.279,
+    "url": "https://trondheimoutdoor.no/"
+  },
+  {
+    "id": "ice_fishing_jonsvatnet",
+    "nome_it": "Pesca nel ghiaccio a Jonsvatnet",
+    "nome_en": "Ice fishing at Jonsvatnet lake",
+    "descrizione_it": "Trapano, canna e guida; transfert bus incluso; ciambella e caffè sul ghiaccio.",
+    "descrizione_en": "Auger, rod and guide; bus transfer included; donut and coffee on ice.",
+    "categorie": [
+      "Natura",
+      "Fauna & natura"
+    ],
+    "prezzo_eur": 45,
+    "prezzo_nok": 531,
+    "fascia_prezzo": "30-50 €",
+    "periodo_da": "2025-12",
+    "periodo_a": "2026-03",
+    "nota_orari": "Durata 4h",
+    "lat": 63.382,
+    "lng": 10.573,
+    "url": "https://icefishing.no/"
+  },
+  {
+    "id": "langrenn_course_bymarka",
+    "nome_it": "Corso sci di fondo base",
+    "nome_en": "Cross‑country ski lesson",
+    "descrizione_it": "2 ore di lezione tecnica + noleggio sci classico a Bymarka.",
+    "descrizione_en": "2‑hour technique lesson + classic ski rental at Bymarka.",
+    "categorie": [
+      "Sci & sport invernali"
+    ],
+    "prezzo_eur": 55,
+    "prezzo_nok": 649,
+    "fascia_prezzo": "50-70 €",
+    "periodo_da": "2025-12",
+    "periodo_a": "2026-03",
+    "nota_orari": "Gruppi max 8 persone",
+    "lat": 63.412,
+    "lng": 10.273,
+    "url": "https://xcskitrondheim.no/"
+  },
+  {
+    "id": "trondelag_theatre_play",
+    "nome_it": "Spettacolo al Trøndelag Teater",
+    "nome_en": "Play at Trøndelag Theatre",
+    "descrizione_it": "Biglietto platea per produzione locale (sottotitoli inglese su app).",
+    "descrizione_en": "Stalls ticket for local production (English subtitles via app).",
+    "categorie": [
+      "Cultura & folklore",
+      "Attività cittadine"
+    ],
+    "prezzo_eur": 40,
+    "prezzo_nok": 472,
+    "fascia_prezzo": "30-50 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "Spettacoli 19:00",
+    "lat": 63.43,
+    "lng": 10.396,
+    "url": "https://trondelagteater.no/"
+  },
+  {
+    "id": "baklidammen_sup",
+    "nome_it": "SUP al lago Baklidammen",
+    "nome_en": "Stand‑up paddle Baklidammen",
+    "descrizione_it": "Noleggio tavola e muta 2h; lago calmo a 15 min di bus.",
+    "descrizione_en": "Board and wetsuit rental 2h; calm lake 15 min by bus.",
+    "categorie": [
+      "Escursioni & passeggiate",
+      "Natura"
+    ],
+    "prezzo_eur": 28,
+    "prezzo_nok": 330,
+    "fascia_prezzo": "20-30 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-09",
+    "nota_orari": "Ultimo noleggio 17:00",
+    "lat": 63.426,
+    "lng": 10.277,
+    "url": "https://supbaklidammen.no/"
+  },
+  {
+    "id": "egon_tower_brunch",
+    "nome_it": "Brunch alla torre Egon girevole",
+    "nome_en": "Revolving tower Egon brunch",
+    "descrizione_it": "Buffet all‑you‑can‑eat con panorama a 81 m di altezza.",
+    "descrizione_en": "All‑you‑can‑eat buffet with 81 m high panorama.",
+    "categorie": [
+      "Food & drink",
+      "Attività cittadine"
+    ],
+    "prezzo_eur": 30,
+    "prezzo_nok": 354,
+    "fascia_prezzo": "20-30 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "Sab‑dom 10‑13",
+    "lat": 63.433,
+    "lng": 10.433,
+    "url": "https://egontower.no/"
+  },
+  {
+    "id": "bymarka_mtb_rental",
+    "nome_it": "Noleggio MTB elettrica Bymarka",
+    "nome_en": "E‑MTB rental in Bymarka",
+    "descrizione_it": "E‑mountain‑bike full day, casco incluso, mappa dei trail intermedi.",
+    "descrizione_en": "Full‑day e‑MTB, helmet included, map of intermediate trails.",
+    "categorie": [
+      "Escursioni & passeggiate",
+      "Natura"
+    ],
+    "prezzo_eur": 65,
+    "prezzo_nok": 767,
+    "fascia_prezzo": "50-70 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-10",
+    "nota_orari": "Ritiro 09:00, riconsegna 18:00",
+    "lat": 63.404,
+    "lng": 10.268,
+    "url": "https://emtbtrondheim.no/"
+  },
+  {
+    "id": "fjordkayak_midnight",
+    "nome_it": "Kayak di mezzanotte sul fiordo",
+    "nome_en": "Midnight kayak on the fjord",
+    "descrizione_it": "Uscita guidata di 2h sotto il cielo crepuscolare settembrino.",
+    "descrizione_en": "2‑hour guided paddle under September twilight.",
+    "categorie": [
+      "Natura",
+      "Escursioni & passeggiate"
+    ],
+    "prezzo_eur": 48,
+    "prezzo_nok": 566,
+    "fascia_prezzo": "30-50 €",
+    "periodo_da": "2025-09",
+    "periodo_a": "2025-09",
+    "nota_orari": "Partenza 22:00",
+    "lat": 63.436,
+    "lng": 10.399,
+    "url": "https://fjordkayak.no/"
+  },
+  {
+    "id": "nidelva_riverboat",
+    "nome_it": "Riverboat lungo la Nidelva",
+    "nome_en": "Electric riverboat Nidelva",
+    "descrizione_it": "Crociera silenziosa di 45 min nel centro storico, commento in inglese.",
+    "descrizione_en": "Silent 45‑min cruise through the old town, English commentary.",
+    "categorie": [
+      "Attività cittadine",
+      "Escursioni & passeggiate"
+    ],
+    "prezzo_eur": 18,
+    "prezzo_nok": 212,
+    "fascia_prezzo": "10-20 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-10",
+    "nota_orari": "",
+    "lat": 63.43,
+    "lng": 10.401,
+    "url": "https://riverboattrondheim.no/"
+  },
+  {
+    "id": "megazone_laser_tag",
+    "nome_it": "Laser tag indoor Megazone",
+    "nome_en": "Megazone indoor laser tag",
+    "descrizione_it": "Partite da 20 minuti in arena futuristica; ideale in giorni di pioggia.",
+    "descrizione_en": "20‑minute games in futuristic arena; great for rainy days.",
+    "categorie": [
+      "Attività cittadine",
+      "Sci & sport invernali"
+    ],
+    "prezzo_eur": 22,
+    "prezzo_nok": 260,
+    "fascia_prezzo": "20-30 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "",
+    "lat": 63.435,
+    "lng": 10.415,
+    "url": "https://megazonetrondheim.no/"
+  },
+  {
+    "id": "gloshaugen_arch_walk",
+    "nome_it": "Passeggiata architettura NTNU Gløshaugen",
+    "nome_en": "NTNU Gløshaugen architecture walk",
+    "descrizione_it": "Visita libera del campus storico NTNU con guida audio su smartphone.",
+    "descrizione_en": "Self‑guided audio tour of historic NTNU campus.",
+    "categorie": [
+      "Cultura & folklore",
+      "Attività cittadine"
+    ],
+    "prezzo_eur": 0,
+    "prezzo_nok": 0,
+    "fascia_prezzo": "Gratis",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "Scarica app NTNU Walk",
+    "lat": 63.42,
+    "lng": 10.402,
+    "url": "https://ntnu.no/walk"
+  },
+  {
+    "id": "sormarka_apple_pick",
+    "nome_it": "Raccolta mele a Sørmarka Gård",
+    "nome_en": "Apple picking at Sørmarka farm",
+    "descrizione_it": "Cesto da 3 kg incluso; navetta bus dedicata stagione autunnale.",
+    "descrizione_en": "3‑kg basket included; seasonal shuttle bus in autumn.",
+    "categorie": [
+      "Fauna & natura",
+      "Natura",
+      "Food & drink"
+    ],
+    "prezzo_eur": 25,
+    "prezzo_nok": 295,
+    "fascia_prezzo": "20-30 €",
+    "periodo_da": "2025-09",
+    "periodo_a": "2025-10",
+    "nota_orari": "",
+    "lat": 63.374,
+    "lng": 10.297,
+    "url": "https://sormarkagard.no/"
+  },
+  {
+    "id": "skulpturparken_jog",
+    "nome_it": "Jogging nel parco sculture Lade",
+    "nome_en": "Sculpture park Lade jogging loop",
+    "descrizione_it": "Percorso di 5 km tra installazioni artistiche e vista mare.",
+    "descrizione_en": "5‑km loop among art installations and sea view.",
+    "categorie": [
+      "Escursioni & passeggiate",
+      "Attività cittadine"
+    ],
+    "prezzo_eur": 0,
+    "prezzo_nok": 0,
+    "fascia_prezzo": "Gratis",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "",
+    "lat": 63.456,
+    "lng": 10.464,
+    "url": "https://ladeparken.no/"
+  },
+  {
+    "id": "christmas_market",
+    "nome_it": "Mercatino di Natale di Trondheim",
+    "nome_en": "Trondheim Christmas market",
+    "descrizione_it": "Casette in legno, gløgg, artigianato locale, musica dal vivo in piazza Torvet.",
+    "descrizione_en": "Wooden stalls, gløgg, local crafts, live music on Torvet square.",
+    "categorie": [
+      "Cultura & folklore",
+      "Food & drink"
+    ],
+    "prezzo_eur": 0,
+    "prezzo_nok": 0,
+    "fascia_prezzo": "Gratis",
+    "periodo_da": "2025-11",
+    "periodo_a": "2025-12",
+    "nota_orari": "Aperto 11‑19",
+    "lat": 63.43,
+    "lng": 10.395,
+    "url": "https://julemarkedtrondheim.no/"
+  },
+  {
+    "id": "dog_sled_roros",
+    "nome_it": "Sleddog a Røros",
+    "nome_en": "Dog sledding in Røros",
+    "descrizione_it": "Tour di 10 km con istruttore, incluso trasporto bus da Trondheim.",
+    "descrizione_en": "10‑km tour with musher, bus transfer from Trondheim included.",
+    "categorie": [
+      "Fauna & natura",
+      "Sci & sport invernali"
+    ],
+    "prezzo_eur": 150,
+    "prezzo_nok": 1770,
+    "fascia_prezzo": "100-150 €",
+    "periodo_da": "2025-12",
+    "periodo_a": "2026-03",
+    "nota_orari": "Tute termiche fornite",
+    "lat": 62.574,
+    "lng": 11.384,
+    "url": "https://rorosdogsled.no/"
+  },
+  {
+    "id": "trondheim_bridge_bungee",
+    "nome_it": "Bungee jumping ponte Trondheim",
+    "nome_en": "Bridge bungee jump Trondheim",
+    "descrizione_it": "Salto da 45 m sul fiume Nidelva con video HD incluso.",
+    "descrizione_en": "45‑m jump over Nidelva river with HD video.",
+    "categorie": [
+      "Sci & sport invernali"
+    ],
+    "prezzo_eur": 110,
+    "prezzo_nok": 1298,
+    "fascia_prezzo": "100-150 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-09",
+    "nota_orari": "Necessario prenotare slot",
+    "lat": 63.428,
+    "lng": 10.408,
+    "url": "https://bungeetrondheim.no/"
+  },
+  {
+    "id": "sjisjka_aurora_watch",
+    "nome_it": "Osservazione aurora a Sjisjka via treno notturno",
+    "nome_en": "Aurora watch Sjisjka train",
+    "descrizione_it": "Viaggio notturno in treno fino a stazione remota in tundra, bevanda calda inclusa.",
+    "descrizione_en": "Overnight train to remote tundra station, hot drink included.",
+    "categorie": [
+      "Aurora boreale",
+      "Touring / road trip"
+    ],
+    "prezzo_eur": 80,
+    "prezzo_nok": 944,
+    "fascia_prezzo": "70-100 €",
+    "periodo_da": "2025-09",
+    "periodo_a": "2026-03",
+    "nota_orari": "Partenza 22:05, ritorno 06:45",
+    "lat": 67.644,
+    "lng": 18.525,
+    "url": "https://auroratrain.no/"
+  },
+  {
+    "id": "paintball_skullerud",
+    "nome_it": "Paintball bosco Skullerud",
+    "nome_en": "Forest paintball Skullerud",
+    "descrizione_it": "Partita di 2h in bosco attrezzato; tuta, maschera e 200 palline.",
+    "descrizione_en": "2‑hour forest game; suit, mask, 200 balls.",
+    "categorie": [
+      "Sci & sport invernali",
+      "Natura"
+    ],
+    "prezzo_eur": 48,
+    "prezzo_nok": 566,
+    "fascia_prezzo": "30-50 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-10",
+    "nota_orari": "",
+    "lat": 63.37,
+    "lng": 10.335,
+    "url": "https://paintballtrd.no/"
+  },
+  {
+    "id": "fjordfish_cooking",
+    "nome_it": "Corso cucina pesce fiordo",
+    "nome_en": "Fjord fish cooking class",
+    "descrizione_it": "Chef locale insegna a preparare merluzzo e salmone, cena inclusa.",
+    "descrizione_en": "Local chef teaches cod & salmon dishes, dinner included.",
+    "categorie": [
+      "Food & drink",
+      "Cultura & folklore"
+    ],
+    "prezzo_eur": 95,
+    "prezzo_nok": 1121,
+    "fascia_prezzo": "70-100 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "Mer‑ven 17:00‑20:00",
+    "lat": 63.432,
+    "lng": 10.401,
+    "url": "https://fjordfishclass.no/"
+  },
+  {
+    "id": "nidelva_sup_yoga",
+    "nome_it": "SUP‑yoga sul Nidelva",
+    "nome_en": "Stand‑up paddle yoga Nidelva",
+    "descrizione_it": "Lezione di 60 min di yoga su tavola fluttuante ancorata al fiume.",
+    "descrizione_en": "60‑min yoga class on anchored floating boards.",
+    "categorie": [
+      "Benessere & relax",
+      "Escursioni & passeggiate"
+    ],
+    "prezzo_eur": 35,
+    "prezzo_nok": 413,
+    "fascia_prezzo": "30-50 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-09",
+    "nota_orari": "",
+    "lat": 63.429,
+    "lng": 10.401,
+    "url": "https://supyogatrondheim.no/"
+  },
+  {
+    "id": "trollhetta_peak_hike",
+    "nome_it": "Escursione di 2 giorni a Trollhetta",
+    "nome_en": "2‑day hike to Trollhetta peak",
+    "descrizione_it": "Pernottamento in DNT cabin, guida inclusa; trasporto bus da Oppdal.",
+    "descrizione_en": "Overnight in DNT cabin, guide included; bus from Oppdal.",
+    "categorie": [
+      "Escursioni & passeggiate",
+      "Natura"
+    ],
+    "prezzo_eur": 140,
+    "prezzo_nok": 1652,
+    "fascia_prezzo": "100-150 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-09",
+    "nota_orari": "Saccolenzuolo obbligatorio",
+    "lat": 62.82,
+    "lng": 9.389,
+    "url": "https://dnt.no/trollhetta"
+  },
+  {
+    "id": "skansen_bouldering",
+    "nome_it": "Bouldering all'aperto Skansen",
+    "nome_en": "Outdoor bouldering Skansen",
+    "descrizione_it": "Massi urbani con crashpad a noleggio; vista porto.",
+    "descrizione_en": "Urban boulders with rental crashpads; harbour view.",
+    "categorie": [
+      "Escursioni & passeggiate",
+      "Sci & sport invernali"
+    ],
+    "prezzo_eur": 10,
+    "prezzo_nok": 118,
+    "fascia_prezzo": "5-10 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-10",
+    "nota_orari": "",
+    "lat": 63.44,
+    "lng": 10.395,
+    "url": "https://skansenboulder.no/"
+  },
+  {
+    "id": "baklandet_coffee_crawl",
+    "nome_it": "Coffee crawl a Bakklandet",
+    "nome_en": "Bakklandet coffee crawl",
+    "descrizione_it": "Tour autoguidato di 5 caffetterie storiche con coupon degustazione.",
+    "descrizione_en": "Self‑guided tour of 5 historic cafés with tasting coupons.",
+    "categorie": [
+      "Food & drink",
+      "Cultura & folklore"
+    ],
+    "prezzo_eur": 22,
+    "prezzo_nok": 260,
+    "fascia_prezzo": "20-30 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "",
+    "lat": 63.43,
+    "lng": 10.407,
+    "url": "https://coffeecrawl.no/"
+  },
+  {
+    "id": "trolla_glassblowing",
+    "nome_it": "Soffiatura vetro a Trolla",
+    "nome_en": "Glassblowing workshop Trolla",
+    "descrizione_it": "Laboratorio di 3h per creare una piccola scultura in vetro.",
+    "descrizione_en": "3‑hour workshop to create a small glass sculpture.",
+    "categorie": [
+      "Cultura & folklore",
+      "Attività cittadine"
+    ],
+    "prezzo_eur": 110,
+    "prezzo_nok": 1298,
+    "fascia_prezzo": "100-150 €",
+    "periodo_da": "2025-08",
+    "periodo_a": "2025-12",
+    "nota_orari": "Max 6 partecipanti",
+    "lat": 63.464,
+    "lng": 10.244,
+    "url": "https://trollaglass.no/"
   }
 ]

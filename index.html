@@ -3,38 +3,183 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Norway Experiences – Demo</title>
+<title>Norway Experiences</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
 <style>
-body{font-family:Arial,Helvetica,sans-serif;margin:0;padding:0;background:#f5f5f7;color:#111}
-header{background:#024486;color:#fff;padding:1rem}
-h1{margin:0;font-size:1.4rem}
-#content{padding:1rem}
-.activity{border:1px solid #ccc;border-radius:8px;padding:.8rem;margin-bottom:.8rem;background:#fff;box-shadow:2px 2px 5px rgba(0,0,0,.05)}
-.cat{font-size:.8rem;color:#555}
-.price{float:right;font-weight:bold}
+:root{
+  --bg:#f5f7fa;
+  --fg:#111;
+  --card:#fff;
+  --accent:#024486;
+}
+body.dark{
+  --bg:#1a1c1f;
+  --fg:#ddd;
+  --card:#2a2d30;
+}
+body{margin:0;font-family:system-ui,Arial,sans-serif;background:var(--bg);color:var(--fg);}
+header{background:var(--accent);color:#fff;padding:.8rem 1rem;display:flex;align-items:center;justify-content:space-between;}
+h1{font-size:1.2rem;margin:0;}
+#tabs{display:flex;gap:.5rem;}
+.tab-btn{background:#fff;color:var(--accent);border:none;padding:.4rem .8rem;border-radius:4px;cursor:pointer;font-weight:bold;}
+.tab-btn.active{background:var(--accent);color:#fff;}
+#darkToggle{cursor:pointer;font-size:.9rem;margin-left:1rem;}
+.section{display:none;padding:1rem;}
+.section.active{display:block;}
+.activity{background:var(--card);border-radius:8px;padding:.8rem;margin-bottom:.8rem;box-shadow:0 2px 4px rgba(0,0,0,.05);position:relative;}
+.activity .price{position:absolute;top:.6rem;right:.8rem;font-weight:bold;}
+.badge{display:inline-block;background:var(--accent);color:#fff;font-size:.7rem;padding:.1rem .4rem;border-radius:3px;margin-right:.3rem}
+button.small{font-size:.7rem;padding:.2rem .5rem;border-radius:3px;border:none;cursor:pointer;margin-left:.3rem}
+#filters{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem;}
+#filters select,#filters input{padding:.3rem;border:1px solid #ccc;border-radius:4px;font-size:.9rem;}
+#map{width:100%;height:calc(100vh - 70px);}
 </style>
 </head>
 <body>
-<header><h1>Norway Experiences (demo)</h1></header>
-<div id="content">Caricamento…</div>
+<header>
+ <h1>Norway Experiences</h1>
+ <div style="display:flex;align-items:center;">
+  <div id="tabs">
+    <button class="tab-btn active" data-tab="list">Elenco</button>
+    <button class="tab-btn" data-tab="map">Mappa</button>
+    <button class="tab-btn" data-tab="fav">Preferiti</button>
+  </div>
+  <span id="darkToggle">🌓</span>
+ </div>
+</header>
+
+<!-- Filters -->
+<div id="filterBar" class="section active">
+ <div id="filters">
+   <input type="text" id="search" placeholder="Cerca..." />
+   <select id="category"><option value="">Categoria</option></select>
+   <select id="price"><option value="">Prezzo</option><option>Gratis</option><option>5-10 €</option><option>10-20 €</option><option>20-30 €</option><option>30-50 €</option><option>50-70 €</option><option>70-100 €</option><option>100-150 €</option></select>
+   <select id="monthFrom"><option value="">Da mese</option></select>
+   <select id="monthTo"><option value="">A mese</option></select>
+ </div>
+ <div id="list"></div>
+</div>
+
+<div id="mapSection" class="section"><div id="map"></div></div>
+<div id="favSection" class="section"><div id="favList" style="padding:1rem;"></div></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script>
-fetch('data.json')
- .then(r=>r.json())
- .then(data=>{
-   const c=document.getElementById('content');
-   c.innerHTML='';
-   data.forEach(a=>{
-     const div=document.createElement('div');
-     div.className='activity';
-     div.innerHTML=`
-       <div class="price">€${a.prezzo_eur}</div>
-       <strong>${a.nome_it}</strong><br>
-       <span class="cat">${a.categorie.join(', ')}</span><br>
-       <span>${a.descrizione_it}</span>
-     `;
-     c.appendChild(div);
-   });
- });
+const DARK_KEY='nx_dark', DONE_KEY='nx_done', FAV_KEY='nx_fav';
+const months=['','Gen','Feb','Mar','Apr','Mag','Giu','Lug','Ago','Set','Ott','Nov','Dic'];
+// populate month selects
+const monthFromSel=document.getElementById('monthFrom');
+const monthToSel=document.getElementById('monthTo');
+for(let i=1;i<months.length;i++){
+  const opt=document.createElement('option'); opt.value=i; opt.textContent=months[i]; monthFromSel.appendChild(opt.cloneNode(true));
+  monthToSel.appendChild(opt);
+}
+// fetch data
+let data=[];
+fetch('data.json').then(r=>r.json()).then(js=>{
+  data=js;
+  initUI();
+});
+function initUI(){
+  // categories
+  const cats=[...new Set(data.flatMap(a=>a.categorie))].sort();
+  const catSel=document.getElementById('category');
+  cats.forEach(c=>{const o=document.createElement('option');o.textContent=c;o.value=c;catSel.appendChild(o)});
+  // event listeners
+  document.querySelectorAll('.tab-btn').forEach(b=>b.onclick=()=>switchTab(b.dataset.tab));
+  document.getElementById('darkToggle').onclick=toggleDark;
+  document.querySelectorAll('#filters input,#filters select').forEach(el=>el.oninput=renderList);
+  renderList();
+  buildMap();
+  loadPrefs();
+  applyDarkMode();
+}
+function switchTab(id){
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active',b.dataset.tab===id));
+  document.querySelectorAll('.section').forEach(s=>{
+    s.classList.toggle('active',
+      (id==='list'&&s.id==='filterBar')||(id==='map'&&s.id==='mapSection')||(id==='fav'&&s.id==='favSection')
+    );
+  });
+  if(id==='map'){map.invalidateSize();}
+  if(id==='fav'){renderFav();}
+}
+function toggleDark(){localStorage.setItem(DARK_KEY,document.body.classList.toggle('dark'));}
+function applyDarkMode(){if(localStorage.getItem(DARK_KEY)==='true'){document.body.classList.add('dark');}}
+function renderList(){
+  const list=document.getElementById('list');
+  list.innerHTML='';
+  const q=document.getElementById('search').value.toLowerCase();
+  const cat=document.getElementById('category').value;
+  const price=document.getElementById('price').value;
+  const mFrom=parseInt(document.getElementById('monthFrom').value||0);
+  const mTo=parseInt(document.getElementById('monthTo').value||13);
+  let matches=data.filter(a=>{
+    const txt=(a.nome_it+' '+a.descrizione_it).toLowerCase();
+    if(q && !txt.includes(q)) return false;
+    if(cat && !a.categorie.includes(cat)) return false;
+    if(price && a.fascia_prezzo!==price) return false;
+    // months
+    const from=parseInt(a.periodo_da.split('-')[1]);
+    const to=parseInt(a.periodo_a.split('-')[1]);
+    if((mFrom && to<mFrom)||(mTo && from>mTo)) return false;
+    return true;
+  });
+  matches.forEach(a=>list.appendChild(card(a)));
+}
+function card(a){
+  const div=document.createElement('div');div.className='activity';
+  const done=isDone(a.id),fav=isFav(a.id);
+  div.innerHTML=`<div class="price">€${a.prezzo_eur}</div>
+  <strong>${a.nome_it}</strong><br><span class="cat">${a.categorie.join(', ')}</span><br>
+  <span>${a.descrizione_it}</span><br>
+  <small>Mesi: ${a.periodo_da.slice(5)}‑${a.periodo_a.slice(5)} ${a.nota_orari?('· '+a.nota_orari):''}</small><br>
+  <a href="${a.url}" target="_blank">Sito web</a>
+  <div style="margin-top:.3rem">
+    <button class="small" onclick="toggleDone('${a.id}',this)">${done?'✅ Fatto':'Segna come fatto'}</button>
+    <button class="small" onclick="toggleFav('${a.id}',this)">${fav?'★ Preferito':'☆ Preferito'}</button>
+  </div>`;
+  return div;
+}
+function renderFav(){
+  const favList=document.getElementById('favList');
+  favList.innerHTML='';
+  const favIds=getStore(FAV_KEY);
+  const favActs=data.filter(a=>favIds.includes(a.id));
+  if(!favActs.length){favList.textContent='Nessun preferito.';return;}
+  favActs.forEach(a=>favList.appendChild(card(a)));
+}
+function getStore(k){try{return JSON.parse(localStorage.getItem(k)||'[]')}catch(e){return[]}}
+function setStore(k,arr){localStorage.setItem(k,JSON.stringify(arr));}
+function isDone(id){return getStore(DONE_KEY).includes(id);}
+function isFav(id){return getStore(FAV_KEY).includes(id);}
+function toggleDone(id,btn){
+  let arr=getStore(DONE_KEY);
+  const idx=arr.indexOf(id);
+  if(idx==-1){arr.push(id);}else{arr.splice(idx,1);}
+  setStore(DONE_KEY,arr);
+  btn.textContent=isDone(id)?'✅ Fatto':'Segna come fatto';
+}
+function toggleFav(id,btn){
+  let arr=getStore(FAV_KEY);
+  const idx=arr.indexOf(id);
+  if(idx==-1){arr.push(id);}else{arr.splice(idx,1);}
+  setStore(FAV_KEY,arr);
+  btn.textContent=isFav(id)?'★ Preferito':'☆ Preferito';
+}
+let map,markers;
+function buildMap(){
+  map=L.map('map').setView([63.43,10.4],8);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{attribution:'&copy;OpenStreetMap'}).addTo(map);
+  markers=L.markerClusterGroup();
+  data.forEach(a=>{
+    const marker=L.marker([a.lat,a.lng]).bindPopup(`<strong>${a.nome_it}</strong><br>${a.categorie.join(', ')}<br>€${a.prezzo_eur}`);
+    markers.addLayer(marker);
+  });
+  map.addLayer(markers);
+}
 </script>
 </body>
 </html>

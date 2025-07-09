@@ -1,24 +1,26 @@
-# Norway Experiences – Demo
+# Norway Experiences – Versione 1
 
-Questi file costituiscono una versione di prova (10 attività) dell'app-web per esplorare esperienze da fare a Trondheim e dintorni (Agosto–Dicembre 2025).
+Questa release include:
+* **index.html** – interfaccia completa con:
+  * tabs Elenco / Mappa / Preferiti
+  * filtri combinati (testo, categoria, prezzo, mesi)
+  * toggle dark‑mode
+  * flag “Fatto” e “Preferito” (salvati nel browser)
+  * mappa Leaflet con clustering e pop‑up
+* **data.json** – 50+ attività con tutti i campi concordati.
+* Aggiornamento cambio fisso 1 € = 11,8 NOK.
 
-## Contenuto
+## Pubblicazione
 
-* `index.html` – UI minimale che carica i dati dal file JSON e mostra le attività in elenco.
-* `data.json` – Array di 10 attività con tutti i campi concordati.
-* `README.md` – Questa guida.
+1. Vai sul tuo repo GitHub Pages.
+2. **Upload** (sovrascrivi) `index.html` e `data.json`.
+3. Fai *commit* → Pages rigenererà il sito in 1‑2 min.
+4. Ricarica l’URL: tutte le nuove funzioni saranno online!
 
-## Come pubblicare su GitHub Pages
+## Aggiornamento dati
 
-1. Crea un repository pubblico (es. `norway-experiences`) sul tuo account GitHub.
-2. Nella pagina del repo, clicca **Add file → Upload files** e trascina `index.html` e `data.json`.
-3. Vai su **Settings → Pages**  
-   *Source*: `Branch: main /root` → **Save**.
-4. Attendi ~1 min. Il sito sarà online su  
-   `https://<tuo‑username>.github.io/norway-experiences/`.
+Per cambiare, aggiungere o rimuovere attività:
+* Modifica `data.json` (rispetta la struttura).
+* Carica il nuovo file e fai commit.
 
-## Aggiornare i dati
-
-Modifica `data.json` (o sostituiscilo) e fai _commit_ sul repo; GitHub rigenererà la pagina.
-
-Buon divertimento!
+Buon divertimento e fammi sapere eventuali bug o miglioramenti!
